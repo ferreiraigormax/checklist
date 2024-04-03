@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Checklist v1.0</title>
+</head>
+<body>
+    <section class="cabecalho">
+        <div class="container-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/1048/1048329.png">
+            
+        </div>
+        <label class="label-cabecalho" for="Filial">Filial</label>
+        <select name="Filial" class="filiais">
+            <option value="UNIGRÃOS 1" class="filial">FILIAL I</option>
+            <option value="UNIGRÃOS 3" class="filial">FILIAL II</option>
+            <option value="FERRAGENS" class="filial">FILIAL III</option>
+            <option value="SUPERMERCADOS" class="filial">FILIAL IV</option>
+        </select>
+        <label class="label-cabecalho" for="Placa" required>Placa</label>
+        <input type="text" name="Placa" id="placa" maxlength="7">
+        <label class="label-cabecalho" for="Motorista" required>Motorista</label>
+        <input type="text" name="Motorista" id="motorista">
+        <label class="label-cabecalho" for="Data">Data</label>
+        <input type="date" name="Data" id="data" min="2022-05-22" required>
+    </section>
+    <header>
+    </header>
+    
+    <main>
+        <form action="">
+            
+            <section class="checklist-itens-box">
+                <h1 class="titulo">ENVIO DE CHECKLIST REPROVADOS POR EMAIL</h1>
+                <h2>Assinale apenas os itens reprovados!</h2>
+                <div class="checkbox">
+                    <input type="checkbox" name="item01" id="item01" class="itens" value="ID01 - PNEUS / ESTEPE">
+                    <label class="label-itens" for="item01">ID01 - PNEUS / ESTEPE</label>
+                    <input type="checkbox" name="item02" id="item02" class="itens" value="ID02 - PISCA ALERTA / LANTERNAS">
+                    <label class="label-itens" for="item02">ID02 - PISCA ALERTA / LANTERNAS</label>
+                    <input type="checkbox" name="item03" id="item03" class="itens" value="ID03 - FAROIS">
+                    <label class="label-itens" for="item03">ID03 - FAROIS</label>
+                    <input type="checkbox" name="item04" id="item04" class="itens" value="ID04 - LUZ DE FREIOS">
+                    <label class="label-itens" for="item04">ID04 - LUZ DE FREIOS</label>
+                    <input type="checkbox" name="item05" id="item05" class="itens" value="ID05 - BUZINA">
+                    <label class="label-itens" for="item05">ID05 - BUZINA</label>
+                    <input type="checkbox" name="item06" id="item06" class="itens" value="ID06 - ALARME DE RE">
+                    <label class="label-itens" for="item06">ID06 - ALARME DE RE</label>
+                    <input type="checkbox" name="item07" id="item07" class="itens" value="ID07 - FREIO">
+                    <label class="label-itens" for="item07">ID07 - FREIO</label>
+                    <input type="checkbox" name="item08" id="item08" class="itens" value="ID08 - LIMPADOR DE PARABRISAS">
+                    <label class="label-itens" for="item08">ID08 - LIMPADOR DE PARABRISAS</label>
+                    <input type="checkbox" name="item09" id="item09" class="itens" value="ID09 - RETROVISOR">
+                    <label class="label-itens" for="item09">ID09 - RETROVISOR</label>
+                    <input type="checkbox" name="item10" id="item10" class="itens" value="ID10 - EXTINTORES">
+                    <label class="label-itens" for="item10">ID10 - EXTINTORES</label>
+                    <input type="checkbox" name="item11" id="item11" class="itens" value="ID11 - CONDIÇÕES DOS CONES DE SEGURANÇA">
+                    <label class="label-itens" for="item11">ID11 - CONDIÇÕES DOS CONES DE SEGURANÇA</label>
+                    <input type="checkbox" name="item12" id="item12" class="itens" value="ID12 - CONDIÇÕES DA CAPA DO CONE">
+                    <label class="label-itens" for="item12">ID12 - CONDIÇÕES DA CAPA DO CONE</label>
+                    <input type="checkbox" name="item13" id="item13" class="itens" value="ID13 - ÓLEO DO MOTOR">
+                    <label class="label-itens" for="item13">ID13 - ÓLEO DO MOTOR</label>
+                    <input type="checkbox" name="item14" id="item14" class="itens" value="ID14 - ÓLEO DE FREIO">
+                    <label class="label-itens" for="item14">ID14 - ÓLEO DE FREIO</label>
+                    <input type="checkbox" name="item15" id="item15" class="itens" value="ID15 - ÁGUA DE RADIADOR">
+                    <label class="label-itens" for="item15">ID15 - ÁGUA DE RADIADOR</label>
+                    <input type="checkbox" name="item16" id="item16" class="itens" value="ID16 - CHAVE DE RODA / MACACO">
+                    <label class="label-itens" for="item16">ID16 - CHAVE DE RODA / MACACO</label>
+                    <input type="checkbox" name="item17" id="item17" class="itens" value="ID17 - LONAS">
+                    <label class="label-itens" for="item17">ID17 - LONAS</label>
+                    <input type="checkbox" name="item18" id="item18" class="itens" value="ID18 - TIRANTES">
+                    <label class="label-itens" for="item18">ID18 - TIRANTES</label>
+                    <input type="checkbox" name="item19" id="item19" class="itens" value="ID19 - ESTADO DAS CINTAS AMARRAÇÃO">
+                    <label class="label-itens" for="item19">ID19 - ESTADO DAS CINTAS AMARRAÇÃO</label>
+                    <input type="checkbox" name="item20" id="item20" class="itens" value="ID20 - IDENTIFICAÇÃO DA CAPACIDADE CARGA (TARA)">
+                    <label class="label-itens" for="item20">ID20 - IDENTIFICAÇÃO DA CAPACIDADE CARGA (TARA)</label>
+                    <input type="checkbox" name="item21" id="item21" class="itens" value="ID21 - TRIANGULO DE SEGURANÇA">
+                    <label class="label-itens" for="item21">ID21 - TRIANGULO DE SEGURANÇA</label>
+                    <input type="checkbox" name="item22" id="item22" class="itens" value="ID22 - PLACAS DA ONU">
+                    <label class="label-itens" for="item22">ID22 - PLACAS DA ONU</label>
+                    <input type="checkbox" name="item23" id="item23" class="itens" value="ID23 - SUPORTE DE PLACA DA ONU">
+                    <label class="label-itens" for="item23">ID23 - SUPORTE DE PLACA DA ONU</label>
+                    <input type="checkbox" name="item24" id="item24" class="itens" value="ID24 - KIT MOOP NO LUGAR (LOCAL)">
+                    <label class="label-itens" for="item24">ID24 - KIT MOOP NO LUGAR (LOCAL)</label>
+                    <input type="checkbox" name="item25" id="item25" class="itens" value="ID25 - CINTO DE SEGURANÇA">
+                    <label class="label-itens" for="item25">ID25 - CINTO DE SEGURANÇA</label>
+                    <input type="checkbox" name="item26" id="item26" class="itens" value="ID26 - CALÇOS">
+                    <label class="label-itens" for="item26">ID26 - CALÇOS</label>
+                    <input type="checkbox" name="item27" id="item27" class="itens" value="ID27 - TACÓGRAFO LACRADO (VERIFICAR LACRE)">
+                    <label class="label-itens" for="item27">ID27 - TACÓGRAFO LACRADO (VERIFICAR LACRE)</label>
+                </div>
+                <input type="submit" value="ENVIAR" id="enviar">
+            </section>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
